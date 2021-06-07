@@ -8,21 +8,31 @@
 import SwiftUI
 
 struct ContentView: View {
+	@StateObject var locationManager: LocationManager = LocationManager()
+	var locationAllowed: Bool{
+		locationManager.locationStatus == .authorizedAlways ||
+			locationManager.locationStatus == .authorizedWhenInUse
+	}
     var body: some View {
-		TabView(){
-			MainView().tabItem {
-				VStack{
-					Image(systemName: "thermometer.sun")
-					Text("Текущая Погода")
+		if locationAllowed{
+			TabView(){
+				MainView().tabItem {
+					VStack{
+						Image(systemName: "thermometer.sun")
+						Text("Текущая Погода")
+					}
+				}
+				ForecastView().tabItem {
+					VStack{
+						Image(systemName: "list.dash")
+						Text("Прогноз")
+					}
 				}
 			}
-			ForecastView().tabItem {
-				VStack{
-					Image(systemName: "list.dash")
-					Text("Прогноз")
-				}
-			}
+		}else{
+			Text("Без геолокации не работает")
 		}
+		
     }
 }
 

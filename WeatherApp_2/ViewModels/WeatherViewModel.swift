@@ -116,10 +116,12 @@ class WeatherViewModel: ObservableObject{
 						self.setCity()
 						self.setTemp()
 						self.setWeatherConditions()
+						UserDefaults.standard.setValue(self.currentWeather!.rawString()!, forKey: "currentWeather")
 						print("successful request, data:")
 						print(JSON(response.data ?? ""))
 					case .failure(let error):
 						print(error.localizedDescription)
+						self.currentWeather = JSON(UserDefaults.standard.string(forKey: "currentWeather") ?? "")
 				}
 			}
 	}

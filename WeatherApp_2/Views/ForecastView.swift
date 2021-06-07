@@ -9,25 +9,29 @@ import SwiftUI
 
 struct ForecastView: View {
 	@StateObject var model: ForecastViewModel = ForecastViewModel()
-    var body: some View {
-		List{
-			if model.weatherConditions.count != 0{
-				ForEach(0..<model.weatherConditions.count){ i in
-					HStack{
-						Text(model.dates[i])
-						WeatherEmodji(weatherConditions: model.weatherConditions[i])
-						Text(model.temp[i])
+	var body: some View {
+		if model.weatherConditions.count == 0{
+			ProgressView().progressViewStyle(DefaultProgressViewStyle())
+		}else{
+			List{
+				if model.weatherConditions.count != 0{
+					ForEach(0..<model.weatherConditions.count){ i in
+						HStack{
+							Text(model.dates[i])
+							WeatherEmodji(weatherConditions: model.weatherConditions[i])
+							Text(model.temp[i])
+						}
 					}
+				}else{
+					Text("прогноз пуст")
 				}
-			}else{
-				Text("прогноз пуст")
 			}
 		}
-    }
+	}
 }
 
 struct ForecastView_Previews: PreviewProvider {
-    static var previews: some View {
-        ForecastView()
-    }
+	static var previews: some View {
+		ForecastView()
+	}
 }

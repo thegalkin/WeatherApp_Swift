@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftyJSON
 
 struct MainView: View {
 	@StateObject var model = WeatherViewModel()
@@ -13,18 +14,21 @@ struct MainView: View {
 	
 	var body: some View {
 		NavigationView(){
-			VStack{
-				Spacer()
-				HStack{
-					WeatherEmodji(weatherConditions: model.weatherConditions).font(.system(.largeTitle))
-					Text(model.temp).font(.system(.largeTitle))
+			if model.currentWeather == JSON(){
+				ProgressView().progressViewStyle(DefaultProgressViewStyle())
+			}else{
+				VStack{
+					Spacer()
+					HStack{
+						WeatherEmodji(weatherConditions: model.weatherConditions).font(.system(.largeTitle))
+						Text(model.temp).font(.system(.largeTitle))
+					}
+					.navigationTitle(model.city)
+					Spacer()
+					Recomendation(weatherConditions: model.weatherConditions)
+					Spacer()
 				}
-				.navigationTitle(model.city)
-				Spacer()
-				Recomendation(weatherConditions: model.weatherConditions)
-				Spacer()
 			}
-			
 		}
 	}
 }
