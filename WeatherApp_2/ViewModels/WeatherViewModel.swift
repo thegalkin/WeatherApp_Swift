@@ -20,6 +20,10 @@ enum WeatherConditions {
 	case clear
 	case none
 }
+enum WorkingMode{
+	case location
+	case city
+}
 
 class WeatherViewModel: ObservableObject{
 	//разместил ключ здесь, потому что так он хотя бы будет закодирован в бинарник,
@@ -27,6 +31,13 @@ class WeatherViewModel: ObservableObject{
 	private var weatherApiKey = "60e5f4e300d35c53f771a04539b8a238"
 	
 	init(){
+		let ud = UserDefaults.standard.string(forKey: "city")
+		if ud != nil && ud != ""{
+			self.workingMode = .city
+		}else{
+			self.workingMode = .location
+		}
+		
 		Timer.scheduledTimer(withTimeInterval: 0.3, repeats: true){ timer in
 			if self.lat != "0.0" && self.lon != "0.0"{
 				self.getCurrentWeatherByLocation()
@@ -37,6 +48,8 @@ class WeatherViewModel: ObservableObject{
 		self.setCity()
 		self.setTemp()
 		self.setWeatherConditions()
+		
+		
 		
 	}
 	
@@ -54,7 +67,7 @@ class WeatherViewModel: ObservableObject{
 	}
 	
 	
-	
+	@Published var workingMode: WorkingMode
 	@Published var currentWeather: JSON? = JSON()
 	
 	
@@ -111,8 +124,16 @@ class WeatherViewModel: ObservableObject{
 	}
 	
 	func getCurrentWeatherByLocation(){
+		
 		print(lat + " " + lon)
-		AF.request(URL(string: "https://api.openweathermap.org/data/2.5/weather?lat=\(lat)&lon=\(lon)&appid=\(weatherApiKey)&units=metric")!)
+		let url: URL
+		if workingMode == .location{
+			url = URL(string: "https://api.openweathermap.org/data/2.5/weather?lat=\(lat)&lon=\(lon)&appid=\(weatherApiKey)&units=metric")!
+		}else{
+			let city = UserDefaults.standard.string(forKey: "city") ?? ""
+			url = URL(string: "https://api.openweathermap.org/data/2.5/weather?q=\(city)&appid=\(weatherApiKey)&units=metric")!
+		}
+		AF.request(url)
 			.response{ response in
 				switch response.result{
 					case .success:
