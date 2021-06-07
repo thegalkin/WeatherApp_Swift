@@ -3,23 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		39E06069266E856D00BF02BF /* WeatherApp_2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E06068266E856D00BF02BF /* WeatherApp_2App.swift */; };
-		39E0606B266E856D00BF02BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E0606A266E856D00BF02BF /* ContentView.swift */; };
 		39E0606D266E857100BF02BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39E0606C266E857100BF02BF /* Assets.xcassets */; };
 		39E06070266E857200BF02BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39E0606F266E857200BF02BF /* Preview Assets.xcassets */; };
+		39E06088266E860000BF02BF /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E0607C266E85FF00BF02BF /* WeatherViewModel.swift */; };
+		39E06089266E860000BF02BF /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E0607D266E85FF00BF02BF /* LocationViewModel.swift */; };
+		39E0608A266E860000BF02BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E0607E266E85FF00BF02BF /* ContentView.swift */; };
+		39E0608B266E860000BF02BF /* WeatherEmodji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E06080266E860000BF02BF /* WeatherEmodji.swift */; };
+		39E0608C266E860000BF02BF /* Recomendation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E06081266E860000BF02BF /* Recomendation.swift */; };
+		39E0608D266E860000BF02BF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E06082266E860000BF02BF /* MainView.swift */; };
+		39E06093266E864700BF02BF /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 39E06092266E864700BF02BF /* SwiftyJSON */; };
+		39E06096266E865400BF02BF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 39E06095266E865400BF02BF /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		39E06065266E856D00BF02BF /* WeatherApp_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39E06068266E856D00BF02BF /* WeatherApp_2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApp_2App.swift; sourceTree = "<group>"; };
-		39E0606A266E856D00BF02BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		39E0606C266E857100BF02BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39E0606F266E857200BF02BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		39E06071266E857200BF02BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39E0607C266E85FF00BF02BF /* WeatherViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		39E0607D266E85FF00BF02BF /* LocationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		39E0607E266E85FF00BF02BF /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../../WeatherAppSwiftUI_Test/WeatherAppSwiftUI_Test/ContentView.swift; sourceTree = "<group>"; };
+		39E06080266E860000BF02BF /* WeatherEmodji.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherEmodji.swift; sourceTree = "<group>"; };
+		39E06081266E860000BF02BF /* Recomendation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recomendation.swift; sourceTree = "<group>"; };
+		39E06082266E860000BF02BF /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		39E0608F266E862300BF02BF /* Alamofire */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Alamofire; path = "../../../../Library/Developer/Xcode/DerivedData/WeatherAppSwiftUI_Test-faudrhrihzziprbmbsuojayfxixw/SourcePackages/checkouts/Alamofire"; sourceTree = "<group>"; };
+		39E06090266E862300BF02BF /* SwiftyJSON */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SwiftyJSON; path = "../../../../Library/Developer/Xcode/DerivedData/WeatherAppSwiftUI_Test-faudrhrihzziprbmbsuojayfxixw/SourcePackages/checkouts/SwiftyJSON"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39E06093266E864700BF02BF /* SwiftyJSON in Frameworks */,
+				39E06096266E865400BF02BF /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,9 +69,11 @@
 			isa = PBXGroup;
 			children = (
 				39E06068266E856D00BF02BF /* WeatherApp_2App.swift */,
-				39E0606A266E856D00BF02BF /* ContentView.swift */,
 				39E0606C266E857100BF02BF /* Assets.xcassets */,
 				39E06071266E857200BF02BF /* Info.plist */,
+				39E0607E266E85FF00BF02BF /* ContentView.swift */,
+				39E0607B266E85FF00BF02BF /* ViewModels */,
+				39E0607F266E860000BF02BF /* Views */,
 				39E0606E266E857200BF02BF /* Preview Content */,
 			);
 			path = WeatherApp_2;
@@ -64,9 +82,30 @@
 		39E0606E266E857200BF02BF /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				39E0608F266E862300BF02BF /* Alamofire */,
+				39E06090266E862300BF02BF /* SwiftyJSON */,
 				39E0606F266E857200BF02BF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		39E0607B266E85FF00BF02BF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				39E0607C266E85FF00BF02BF /* WeatherViewModel.swift */,
+				39E0607D266E85FF00BF02BF /* LocationViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		39E0607F266E860000BF02BF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				39E06080266E860000BF02BF /* WeatherEmodji.swift */,
+				39E06081266E860000BF02BF /* Recomendation.swift */,
+				39E06082266E860000BF02BF /* MainView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +124,10 @@
 			dependencies = (
 			);
 			name = WeatherApp_2;
+			packageProductDependencies = (
+				39E06092266E864700BF02BF /* SwiftyJSON */,
+				39E06095266E865400BF02BF /* Alamofire */,
+			);
 			productName = WeatherApp_2;
 			productReference = 39E06065266E856D00BF02BF /* WeatherApp_2.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +155,10 @@
 				Base,
 			);
 			mainGroup = 39E0605C266E856D00BF02BF;
+			packageReferences = (
+				39E06091266E864700BF02BF /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				39E06094266E865400BF02BF /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 39E06066266E856D00BF02BF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +185,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39E0606B266E856D00BF02BF /* ContentView.swift in Sources */,
+				39E0608B266E860000BF02BF /* WeatherEmodji.swift in Sources */,
+				39E0608D266E860000BF02BF /* MainView.swift in Sources */,
+				39E0608C266E860000BF02BF /* Recomendation.swift in Sources */,
+				39E06088266E860000BF02BF /* WeatherViewModel.swift in Sources */,
+				39E0608A266E860000BF02BF /* ContentView.swift in Sources */,
 				39E06069266E856D00BF02BF /* WeatherApp_2App.swift in Sources */,
+				39E06089266E860000BF02BF /* LocationViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +380,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		39E06091266E864700BF02BF /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		39E06094266E865400BF02BF /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		39E06092266E864700BF02BF /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39E06091266E864700BF02BF /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		39E06095266E865400BF02BF /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39E06094266E865400BF02BF /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 39E0605D266E856D00BF02BF /* Project object */;
 }
