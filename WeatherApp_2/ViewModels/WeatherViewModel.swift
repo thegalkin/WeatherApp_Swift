@@ -33,6 +33,10 @@ class WeatherViewModel: ObservableObject{
 				timer.invalidate()
 			}
 		}
+		self.currentWeather = JSON(UserDefaults.standard.string(forKey: "currentWeather") ?? "")
+		self.setCity()
+		self.setTemp()
+		self.setWeatherConditions()
 		
 	}
 	
@@ -122,6 +126,7 @@ class WeatherViewModel: ObservableObject{
 					case .failure(let error):
 						print(error.localizedDescription)
 						self.currentWeather = JSON(UserDefaults.standard.string(forKey: "currentWeather") ?? "")
+						
 				}
 			}
 	}

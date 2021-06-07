@@ -22,7 +22,11 @@ class ForecastViewModel: ObservableObject{
 				timer.invalidate()
 			}
 		}
-		
+		self.currentWeather = JSON(UserDefaults.standard.string(forKey: "currentWeather") ?? "")
+		self.setCity()
+		self.setTemp()
+		self.setDates()
+		self.setWeatherConditions()
 	}
 	
 	

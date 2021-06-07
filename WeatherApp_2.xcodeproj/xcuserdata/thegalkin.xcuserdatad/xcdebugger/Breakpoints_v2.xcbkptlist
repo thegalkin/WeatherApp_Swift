@@ -14,10 +14,178 @@
             filePath = "WeatherApp_2/ViewModels/WeatherViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
             landmarkName = "setTemp()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "73B5651C-3275-46DA-B6BA-BA4E6A986C24"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WeatherApp_2/ViewModels/WeatherViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "WeatherViewModel"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "73B5651C-3275-46DA-B6BA-BA4E6A986C24 - 5e611ae35481b24e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WeatherApp_2.WeatherViewModel.init() -&gt; WeatherApp_2.WeatherViewModel"
+                  moduleName = "WeatherApp_2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thegalkin/GitHub/WeatherApp_2/WeatherApp_2/ViewModels/WeatherViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "352">
+               </Location>
+               <Location
+                  uuid = "73B5651C-3275-46DA-B6BA-BA4E6A986C24 - d0958145f6878643"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of WeatherApp_2.WeatherViewModel.currentWeather : Swift.Optional&lt;SwiftyJSON.JSON&gt;"
+                  moduleName = "WeatherApp_2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thegalkin/GitHub/WeatherApp_2/WeatherApp_2/ViewModels/WeatherViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "73B5651C-3275-46DA-B6BA-BA4E6A986C24 - fc0450035918c111"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WeatherApp_2.WeatherViewModel.currentWeather.setter : Swift.Optional&lt;SwiftyJSON.JSON&gt;"
+                  moduleName = "WeatherApp_2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thegalkin/GitHub/WeatherApp_2/WeatherApp_2/ViewModels/WeatherViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "160">
+               </Location>
+               <Location
+                  uuid = "73B5651C-3275-46DA-B6BA-BA4E6A986C24 - eb1908c41d5156d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WeatherApp_2.WeatherViewModel.currentWeather.getter : Swift.Optional&lt;SwiftyJSON.JSON&gt;"
+                  moduleName = "WeatherApp_2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thegalkin/GitHub/WeatherApp_2/WeatherApp_2/ViewModels/WeatherViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "236">
+               </Location>
+               <Location
+                  uuid = "73B5651C-3275-46DA-B6BA-BA4E6A986C24 - c8119ad9294ae2da"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WeatherApp_2.WeatherViewModel.currentWeather.modify : Swift.Optional&lt;SwiftyJSON.JSON&gt;"
+                  moduleName = "WeatherApp_2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thegalkin/GitHub/WeatherApp_2/WeatherApp_2/ViewModels/WeatherViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "73B5651C-3275-46DA-B6BA-BA4E6A986C24 - 55813710cef94511"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WeatherApp_2.WeatherViewModel.currentWeather.modify : Swift.Optional&lt;SwiftyJSON.JSON&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "WeatherApp_2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thegalkin/GitHub/WeatherApp_2/WeatherApp_2/ViewModels/WeatherViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "73B5651C-3275-46DA-B6BA-BA4E6A986C24 - 508a6296bd107f92"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WeatherApp_2.WeatherViewModel.$currentWeather.getter : Combine.Published&lt;Swift.Optional&lt;SwiftyJSON.JSON&gt;&gt;.Publisher"
+                  moduleName = "WeatherApp_2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thegalkin/GitHub/WeatherApp_2/WeatherApp_2/ViewModels/WeatherViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "73B5651C-3275-46DA-B6BA-BA4E6A986C24 - 6d57820a2f32c786"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WeatherApp_2.WeatherViewModel.$currentWeather.setter : Combine.Published&lt;Swift.Optional&lt;SwiftyJSON.JSON&gt;&gt;.Publisher"
+                  moduleName = "WeatherApp_2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thegalkin/GitHub/WeatherApp_2/WeatherApp_2/ViewModels/WeatherViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "268">
+               </Location>
+               <Location
+                  uuid = "73B5651C-3275-46DA-B6BA-BA4E6A986C24 - 590937d0a7018c6e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WeatherApp_2.WeatherViewModel.$currentWeather.modify : Combine.Published&lt;Swift.Optional&lt;SwiftyJSON.JSON&gt;&gt;.Publisher"
+                  moduleName = "WeatherApp_2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thegalkin/GitHub/WeatherApp_2/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "73B5651C-3275-46DA-B6BA-BA4E6A986C24 - 74bd63c49eab790e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WeatherApp_2.WeatherViewModel.$currentWeather.modify : Combine.Published&lt;Swift.Optional&lt;SwiftyJSON.JSON&gt;&gt;.Publisher with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "WeatherApp_2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thegalkin/GitHub/WeatherApp_2/WeatherApp_2/ViewModels/WeatherViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
